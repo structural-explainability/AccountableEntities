@@ -2,12 +2,18 @@ name = "AccountableEntities"
 version = "0.1.0"
 defaultTargets = ["StructuralExplainability"]
 keywords = [
-  "ontology",
-  "identity",
-  "accountable-entities",
-  "accountability",
-  "structural-explainability"
+"formal-ontology",
+"identity-regimes",
+"structural-explainability",
+"accountability",
+"semantic-interoperability",
+"formal-verification",
+"theorem-proving",
+"lean4",
+"necessity-and-sufficiency",
+"structural-constraints"
 ]
+
 license = "MIT"
 
 [[lean_lib]]
