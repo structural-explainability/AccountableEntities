@@ -1,0 +1,16 @@
+# REQ: Verify Lean proofs compile on every push and PR.
+# WHY: Proofs are the deliverable; broken proofs must not merge.
+name: Lean Action CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6 # OBS: v6 current as of Dec 2025
+      - uses: leanprover/lean-action@v1

@@ -1,0 +1,18 @@
+name = "AccountableEntities"
+version = "0.1.0"
+defaultTargets = ["StructuralExplainability"]
+keywords = [
+  "ontology",
+  "identity",
+  "accountable-entities",
+  "accountability",
+  "structural-explainability"
+]
+license = "MIT"
+
+[[lean_lib]]
+name = "StructuralExplainability"
+
+[[lean_exe]]
+name = "ae"
+root = "Main"
