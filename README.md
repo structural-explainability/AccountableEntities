@@ -1,6 +1,6 @@
 # Structural Explainability: Accountable Entities
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
 ![Build Status](https://github.com/structural-explainability/AccountableEntities/actions/workflows/ci.yml/badge.svg)
 [![Check Links](https://github.com/structural-explainability/AccountableEntities/actions/workflows/links.yml/badge.svg)](https://github.com/structural-explainability/AccountableEntities/actions/workflows/links.yml)
 

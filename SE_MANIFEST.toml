@@ -1,0 +1,42 @@
+schema = "se-manifest-1"
+
+[repo]
+name = "AccountableEntities"
+org  = "structural-explainability"
+kind = "formalization"
+status = "reference"
+since = "2025"
+summary = "Lean formalization of AE identity regimes and conformance predicates."
+
+[layer]
+space = "SE"
+role  = "formal-identity"
+
+[depends]
+required = [
+  "structural-explainability/spec-se@v1",
+  "structural-explainability/spec-ae@v1",
+]
+optional = []
+
+[provides]
+artifacts = ["README.md"]
+
+[scope]
+includes = [
+  "types and predicates for AE kinds and regimes",
+  "proof scaffolding for AE conformance",
+]
+excludes = [
+  "domain semantics",
+  "implementation code generation",
+  "epistemic, causal, or normative conclusions",
+]
+
+[citation]
+cff = "CITATION.cff"
+preferred = "repo"
+bib_hint = "ae-lean-2025"
+
+[traceability]
+identifier_map = "EvolutionProtocol/Spec/IdentifierMap.lean"
