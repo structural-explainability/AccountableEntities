@@ -29,8 +29,9 @@ keywords = [
   "semantic-interoperability",
   "structural-constraints",
   "identity-regimes",
-  "formal-ontology",
+  "formal-specification",
   "formal-verification",
+  "proof-carrying",
   "theorem-proving",
   "lean4"
 ]
