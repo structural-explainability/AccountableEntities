@@ -3,6 +3,7 @@
 # ============================================================
 
 schema = "se-manifest-schema"
+schema_version = "0.5.0"
 schema_url = "https://raw.githubusercontent.com/structural-explainability/se-manifest-schema/main/manifest-schema.toml"
 
 # === Framework Context ===
@@ -14,14 +15,15 @@ purpose = "Declares this repository's role in the Structural Explainability ecos
 
 # === Repository Identity ===
 
-[repo]
+[repository]
+organization = "structural-explainability"
 name = "AccountableEntities"
 org  = "structural-explainability"
 class = "theory"
 kind = "formalization"
-status = "reference"
+status = "active"
 since = "2025"
-summary = "Lean formalization of AE identity regimes and conformance predicates."
+summary = "Lean formalization of the six Accountable Entity kinds and their conformance mapping onto the canonical identity-regime profiles owned by se-theory-identity-regimes."
 
 # === Layer Position ===
 
@@ -33,8 +35,9 @@ role  = "theory"
 
 [depends]
 required = [
-  { repo = "spec-se", kind = "semantic", version = "v1" },
-  { repo = "spec-ae", kind = "semantic", version = "v1" },
+  { repository = "spec-se", kind = "semantic", version = "v1" },
+  { repository = "spec-ae", kind = "semantic", version = "v1" },
+  { repository = "se-theory-identity-regimes", kind = "semantic", version = "v1", reason = "Canonical owner of regime families and profile kinds; do not use the superseded PascalCase IdentityRegimes repo." },
 ]
 optional = []
 
@@ -42,6 +45,7 @@ optional = []
 
 [provides]
 artifacts = [
+  "AccountableEntities/",
   "ANNOTATIONS.md",
   "CITATION.cff",
   "README.md",
@@ -52,12 +56,14 @@ artifacts = [
 
 [scope]
 includes = [
-  "types and predicates for AE kinds and regimes",
-  "proof scaffolding for AE conformance",
+"the six Accountable Entity kinds as Lean types",
+"profile-conformance relations from accountable entity kinds to canonical identity-regime profiles",
+"proof scaffolding for accountable-entity/profile conformance",
 ]
 excludes = [
-  "domain semantics",
-  "implementation code generation",
+  "definition of regime families or profile kinds (owned by se-theory-identity-regimes)",
+  "domain-specific entity semantics",
+  "operational code generation",
   "epistemic, causal, or normative conclusions",
 ]
 
