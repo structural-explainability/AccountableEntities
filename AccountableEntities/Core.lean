@@ -1,3 +1,5 @@
+-- Archived.
+-- Retired and no longer authoritative. See repository README.md.
 import AccountableEntities.Core.Coverage
 import AccountableEntities.Core.EntityKinds
 import AccountableEntities.Core.MappingJustification

@@ -1,3 +1,5 @@
+-- Archived.
+-- Retired and no longer authoritative. See repository README.md.
 namespace AccountableEntities.Spec
 
 -- Repo: structural-explainability/AccountableEntities
